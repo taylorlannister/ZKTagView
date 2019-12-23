@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDB2868223AB145D0038632B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB2868123AB145D0038632B /* AppDelegate.swift */; };
+		BDB2868423AB145D0038632B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB2868323AB145D0038632B /* SceneDelegate.swift */; };
+		BDB2868623AB145D0038632B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB2868523AB145D0038632B /* ViewController.swift */; };
+		BDB2868923AB145D0038632B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB2868723AB145D0038632B /* Main.storyboard */; };
+		BDB2868B23AB145F0038632B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB2868A23AB145F0038632B /* Assets.xcassets */; };
+		BDB2868E23AB145F0038632B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB2868C23AB145F0038632B /* LaunchScreen.storyboard */; };
+		BDB2869923AB145F0038632B /* TagViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB2869823AB145F0038632B /* TagViewDemoTests.swift */; };
+		BDB286A423AB145F0038632B /* TagViewDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB286A323AB145F0038632B /* TagViewDemoUITests.swift */; };
+		BDB9833823ACC8130019BDA8 /* XDTTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB9833423ACC8130019BDA8 /* XDTTagView.swift */; };
+		BDB9833A23ACC8130019BDA8 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB9833623ACC8130019BDA8 /* String+Extension.swift */; };
+		BDB9833E23ACC89E0019BDA8 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB9833D23ACC89E0019BDA8 /* UIColor+Extension.swift */; };
+		BDB9834023ACDE3D0019BDA8 /* XdtHotListTagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB9833F23ACDE3D0019BDA8 /* XdtHotListTagCell.swift */; };
+		BDB9834423AE0B590019BDA8 /* MLHorizontalCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB9834223AE0B590019BDA8 /* MLHorizontalCollectionViewFlowLayout.m */; };
+		F3838D196D2A2F985118795A /* libPods-TagViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 018A1BAA4E8D0E79C568065E /* libPods-TagViewDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDB2869523AB145F0038632B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDB2867623AB145D0038632B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDB2867D23AB145D0038632B;
+			remoteInfo = TagViewDemo;
+		};
+		BDB286A023AB145F0038632B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDB2867623AB145D0038632B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDB2867D23AB145D0038632B;
+			remoteInfo = TagViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		018A1BAA4E8D0E79C568065E /* libPods-TagViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TagViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		518173352BF1A9EC84919C5F /* Pods-TagViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TagViewDemo.release.xcconfig"; path = "Target Support Files/Pods-TagViewDemo/Pods-TagViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BDB2867E23AB145D0038632B /* TagViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TagViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB2868123AB145D0038632B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDB2868323AB145D0038632B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BDB2868523AB145D0038632B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDB2868823AB145D0038632B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDB2868A23AB145F0038632B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDB2868D23AB145F0038632B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDB2868F23AB145F0038632B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDB2869423AB145F0038632B /* TagViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TagViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB2869823AB145F0038632B /* TagViewDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewDemoTests.swift; sourceTree = "<group>"; };
+		BDB2869A23AB145F0038632B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDB2869F23AB145F0038632B /* TagViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TagViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB286A323AB145F0038632B /* TagViewDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewDemoUITests.swift; sourceTree = "<group>"; };
+		BDB286A523AB145F0038632B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDB9833423ACC8130019BDA8 /* XDTTagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDTTagView.swift; sourceTree = "<group>"; };
+		BDB9833623ACC8130019BDA8 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		BDB9833D23ACC89E0019BDA8 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		BDB9833F23ACDE3D0019BDA8 /* XdtHotListTagCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XdtHotListTagCell.swift; sourceTree = "<group>"; };
+		BDB9834223AE0B590019BDA8 /* MLHorizontalCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLHorizontalCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		BDB9834323AE0B590019BDA8 /* MLHorizontalCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLHorizontalCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		BDB9834623AE227E0019BDA8 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		FDE7254B58D347E9AE6FC8CA /* Pods-TagViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TagViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-TagViewDemo/Pods-TagViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDB2867B23AB145D0038632B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3838D196D2A2F985118795A /* libPods-TagViewDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB2869123AB145F0038632B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB2869C23AB145F0038632B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FD974377C8741C58A3E5DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				018A1BAA4E8D0E79C568065E /* libPods-TagViewDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDB2867523AB145D0038632B = {
+			isa = PBXGroup;
+			children = (
+				BDB2868023AB145D0038632B /* TagViewDemo */,
+				BDB2869723AB145F0038632B /* TagViewDemoTests */,
+				BDB286A223AB145F0038632B /* TagViewDemoUITests */,
+				BDB2867F23AB145D0038632B /* Products */,
+				DBC6E339CCF9B37CA5E122D3 /* Pods */,
+				08FD974377C8741C58A3E5DD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BDB2867F23AB145D0038632B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDB2867E23AB145D0038632B /* TagViewDemo.app */,
+				BDB2869423AB145F0038632B /* TagViewDemoTests.xctest */,
+				BDB2869F23AB145F0038632B /* TagViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDB2868023AB145D0038632B /* TagViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BDB286B123AB16530038632B /* Tool */,
+				BDB2868123AB145D0038632B /* AppDelegate.swift */,
+				BDB2868323AB145D0038632B /* SceneDelegate.swift */,
+				BDB2868523AB145D0038632B /* ViewController.swift */,
+				BDB2868723AB145D0038632B /* Main.storyboard */,
+				BDB2868A23AB145F0038632B /* Assets.xcassets */,
+				BDB2868C23AB145F0038632B /* LaunchScreen.storyboard */,
+				BDB2868F23AB145F0038632B /* Info.plist */,
+			);
+			path = TagViewDemo;
+			sourceTree = "<group>";
+		};
+		BDB2869723AB145F0038632B /* TagViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDB2869823AB145F0038632B /* TagViewDemoTests.swift */,
+				BDB2869A23AB145F0038632B /* Info.plist */,
+			);
+			path = TagViewDemoTests;
+			sourceTree = "<group>";
+		};
+		BDB286A223AB145F0038632B /* TagViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDB286A323AB145F0038632B /* TagViewDemoUITests.swift */,
+				BDB286A523AB145F0038632B /* Info.plist */,
+			);
+			path = TagViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		BDB286B123AB16530038632B /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				BDB9834623AE227E0019BDA8 /* Header.h */,
+				BDB9834123AE0B590019BDA8 /* FlowLayout */,
+				BDB9833623ACC8130019BDA8 /* String+Extension.swift */,
+				BDB9833423ACC8130019BDA8 /* XDTTagView.swift */,
+				BDB9833F23ACDE3D0019BDA8 /* XdtHotListTagCell.swift */,
+				BDB9833D23ACC89E0019BDA8 /* UIColor+Extension.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		BDB9834123AE0B590019BDA8 /* FlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				BDB9834223AE0B590019BDA8 /* MLHorizontalCollectionViewFlowLayout.m */,
+				BDB9834323AE0B590019BDA8 /* MLHorizontalCollectionViewFlowLayout.h */,
+			);
+			path = FlowLayout;
+			sourceTree = "<group>";
+		};
+		DBC6E339CCF9B37CA5E122D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDE7254B58D347E9AE6FC8CA /* Pods-TagViewDemo.debug.xcconfig */,
+				518173352BF1A9EC84919C5F /* Pods-TagViewDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDB2867D23AB145D0038632B /* TagViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDB286A823AB145F0038632B /* Build configuration list for PBXNativeTarget "TagViewDemo" */;
+			buildPhases = (
+				36B17825A73E53FBC72A589B /* [CP] Check Pods Manifest.lock */,
+				BDB2867A23AB145D0038632B /* Sources */,
+				BDB2867B23AB145D0038632B /* Frameworks */,
+				BDB2867C23AB145D0038632B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TagViewDemo;
+			productName = TagViewDemo;
+			productReference = BDB2867E23AB145D0038632B /* TagViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDB2869323AB145F0038632B /* TagViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDB286AB23AB145F0038632B /* Build configuration list for PBXNativeTarget "TagViewDemoTests" */;
+			buildPhases = (
+				BDB2869023AB145F0038632B /* Sources */,
+				BDB2869123AB145F0038632B /* Frameworks */,
+				BDB2869223AB145F0038632B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDB2869623AB145F0038632B /* PBXTargetDependency */,
+			);
+			name = TagViewDemoTests;
+			productName = TagViewDemoTests;
+			productReference = BDB2869423AB145F0038632B /* TagViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDB2869E23AB145F0038632B /* TagViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDB286AE23AB145F0038632B /* Build configuration list for PBXNativeTarget "TagViewDemoUITests" */;
+			buildPhases = (
+				BDB2869B23AB145F0038632B /* Sources */,
+				BDB2869C23AB145F0038632B /* Frameworks */,
+				BDB2869D23AB145F0038632B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDB286A123AB145F0038632B /* PBXTargetDependency */,
+			);
+			name = TagViewDemoUITests;
+			productName = TagViewDemoUITests;
+			productReference = BDB2869F23AB145F0038632B /* TagViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDB2867623AB145D0038632B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "刘志康";
+				TargetAttributes = {
+					BDB2867D23AB145D0038632B = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					BDB2869323AB145F0038632B = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = BDB2867D23AB145D0038632B;
+					};
+					BDB2869E23AB145F0038632B = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = BDB2867D23AB145D0038632B;
+					};
+				};
+			};
+			buildConfigurationList = BDB2867923AB145D0038632B /* Build configuration list for PBXProject "TagViewDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDB2867523AB145D0038632B;
+			productRefGroup = BDB2867F23AB145D0038632B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDB2867D23AB145D0038632B /* TagViewDemo */,
+				BDB2869323AB145F0038632B /* TagViewDemoTests */,
+				BDB2869E23AB145F0038632B /* TagViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDB2867C23AB145D0038632B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB2868E23AB145F0038632B /* LaunchScreen.storyboard in Resources */,
+				BDB2868B23AB145F0038632B /* Assets.xcassets in Resources */,
+				BDB2868923AB145D0038632B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB2869223AB145F0038632B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB2869D23AB145F0038632B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36B17825A73E53FBC72A589B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TagViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDB2867A23AB145D0038632B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB2868623AB145D0038632B /* ViewController.swift in Sources */,
+				BDB9834423AE0B590019BDA8 /* MLHorizontalCollectionViewFlowLayout.m in Sources */,
+				BDB9833A23ACC8130019BDA8 /* String+Extension.swift in Sources */,
+				BDB9833823ACC8130019BDA8 /* XDTTagView.swift in Sources */,
+				BDB2868223AB145D0038632B /* AppDelegate.swift in Sources */,
+				BDB2868423AB145D0038632B /* SceneDelegate.swift in Sources */,
+				BDB9834023ACDE3D0019BDA8 /* XdtHotListTagCell.swift in Sources */,
+				BDB9833E23ACC89E0019BDA8 /* UIColor+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB2869023AB145F0038632B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB2869923AB145F0038632B /* TagViewDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB2869B23AB145F0038632B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB286A423AB145F0038632B /* TagViewDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDB2869623AB145F0038632B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDB2867D23AB145D0038632B /* TagViewDemo */;
+			targetProxy = BDB2869523AB145F0038632B /* PBXContainerItemProxy */;
+		};
+		BDB286A123AB145F0038632B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDB2867D23AB145D0038632B /* TagViewDemo */;
+			targetProxy = BDB286A023AB145F0038632B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDB2868723AB145D0038632B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDB2868823AB145D0038632B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDB2868C23AB145F0038632B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDB2868D23AB145F0038632B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDB286A623AB145F0038632B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDB286A723AB145F0038632B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDB286A923AB145F0038632B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDE7254B58D347E9AE6FC8CA /* Pods-TagViewDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HXMR6A4QFB;
+				GCC_PREFIX_HEADER = /Users/ios61/ZKTagView/TagViewDemo/TagViewDemo/Tool/Header.h;
+				INFOPLIST_FILE = TagViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "------.TagViewDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/ios61/ZKTagView/TagViewDemo/TagViewDemo/Tool/Header.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDB286AA23AB145F0038632B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 518173352BF1A9EC84919C5F /* Pods-TagViewDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HXMR6A4QFB;
+				GCC_PREFIX_HEADER = /Users/ios61/ZKTagView/TagViewDemo/TagViewDemo/Tool/Header.h;
+				INFOPLIST_FILE = TagViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "------.TagViewDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/ios61/ZKTagView/TagViewDemo/TagViewDemo/Tool/Header.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BDB286AC23AB145F0038632B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HXMR6A4QFB;
+				INFOPLIST_FILE = TagViewDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "------.TagViewDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TagViewDemo.app/TagViewDemo";
+			};
+			name = Debug;
+		};
+		BDB286AD23AB145F0038632B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HXMR6A4QFB;
+				INFOPLIST_FILE = TagViewDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "------.TagViewDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TagViewDemo.app/TagViewDemo";
+			};
+			name = Release;
+		};
+		BDB286AF23AB145F0038632B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HXMR6A4QFB;
+				INFOPLIST_FILE = TagViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "------.TagViewDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TagViewDemo;
+			};
+			name = Debug;
+		};
+		BDB286B023AB145F0038632B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HXMR6A4QFB;
+				INFOPLIST_FILE = TagViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "------.TagViewDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TagViewDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDB2867923AB145D0038632B /* Build configuration list for PBXProject "TagViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB286A623AB145F0038632B /* Debug */,
+				BDB286A723AB145F0038632B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDB286A823AB145F0038632B /* Build configuration list for PBXNativeTarget "TagViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB286A923AB145F0038632B /* Debug */,
+				BDB286AA23AB145F0038632B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDB286AB23AB145F0038632B /* Build configuration list for PBXNativeTarget "TagViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB286AC23AB145F0038632B /* Debug */,
+				BDB286AD23AB145F0038632B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDB286AE23AB145F0038632B /* Build configuration list for PBXNativeTarget "TagViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB286AF23AB145F0038632B /* Debug */,
+				BDB286B023AB145F0038632B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDB2867623AB145D0038632B /* Project object */;
+}

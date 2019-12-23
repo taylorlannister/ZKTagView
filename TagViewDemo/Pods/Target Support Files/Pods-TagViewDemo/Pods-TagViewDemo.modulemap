@@ -1,0 +1,6 @@
+module Pods_TagViewDemo {
+  umbrella header "Pods-TagViewDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
